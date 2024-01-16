@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: system-ui;
+}
+
+.btn-type-Update {
+  color: white;
+  background-color: blue;
+  border-radius: 5px;
+}
+
+.btn-type-Delete {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+}
+
+.btn-type-Normal {
+  color: white;
+  background-color: rgb(22, 20, 20);
+  border-radius: 5px;
+}
+
+button {
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(22, 20, 20);
+}
+button:hover {
+  background-color: grey;
+}
+button:active {
+  transform: translateY(4px);
+}
+
+.sidebar {
+  width: 5rem;
+  height: 100vh;
+  background-color: #282828;
+  transition-duration: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar .hamburger {
+  width: 1.5rem;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+  margin-left: 1rem;
+}
+.sidebar .linksContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.sidebarOpen {
+  width: 200px;
+  height: 100vh;
+  background-color: #282828;
+  transition-duration: 0.3s;
+}
+.sidebarOpen .linksContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+.sidebarOpen a {
+  text-decoration: none;
+}
+.sidebarOpen .hamburger {
+  width: 1.5rem;
+  margin-top: 1.3rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  color: white;
+}
+
+.normal[aria-current] {
+  position: relative;
+  width: 60px;
+  height: 50px;
+  color: #fe4d44;
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.3s;
+}
+.normal[aria-current] div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.normal[aria-current] path {
+  fill: #fe4d44;
+}
+.normal[aria-current] ::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 50px;
+  background-color: #fe4d44;
+  left: 0;
+  top: 0;
+}
+
+.normal {
+  width: 60px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.3s;
+}
+.normal div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.normal a:hover path {
+  fill: white;
+}
+
+.linkOpen {
+  height: 50px;
+  display: flex;
+  padding-left: 25px;
+  align-items: center;
+  gap: 15px;
+  transition-duration: 0.3s;
+}
+.linkOpen p {
+  color: #8f8f8f;
+  font-weight: bold;
+  font-size: 14px;
+  padding-bottom: 2px;
+}
+.linkOpen div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.normal:hover path {
+  fill: white;
+}
+
+.linkOpen[aria-current] {
+  position: relative;
+  height: 50px;
+  padding-left: 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition-duration: 0.3s;
+  background-color: #1f1f1f;
+}
+.linkOpen[aria-current] path {
+  fill: #fe4d44;
+}
+.linkOpen[aria-current] ::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 50px;
+  background-color: #fe4d44;
+  left: 0px;
+  top: 0;
+}
+.linkOpen[aria-current] div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.linkOpen[aria-current] p {
+  color: #fe4d44;
+  font-weight: bold;
+  font-size: 14px;
+  padding-bottom: 2px;
+}
+.linkOpen[aria-current] p::after {
+  display: none;
+}
+
+.linkOpen:hover p {
+  color: white;
+}
+.linkOpen:hover path {
+  fill: white;
+}
+
+/*# sourceMappingURL=output.css.map */
