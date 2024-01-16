@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import style from './style.module.scss'
 
-const Item = ({text,to,svg,open}) => {
+const Item = ({text,to,svg,open,index}) => {
 
     return (
         <NavLink className={open ? style.linkOpen : style.normal} to={to}>
