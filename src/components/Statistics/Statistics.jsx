@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Profile = () => {
+const Statistics = () => {
     return (
       <div className='ctn'>
         <h2>Statistcs Component</h2>
@@ -8,4 +8,4 @@ const Profile = () => {
     );
   };
   
-export default Profile
+export default Statistics

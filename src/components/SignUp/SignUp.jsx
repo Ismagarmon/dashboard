@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Profile = () => {
+const SignUp = () => {
     return (
       <div className='ctn'>
         <h2>SignUp Component</h2>
@@ -8,4 +8,4 @@ const Profile = () => {
     );
   };
   
-export default Profile
+export default SignUp
