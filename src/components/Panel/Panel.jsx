@@ -1,9 +1,10 @@
 import React from 'react'
 import { BarChart } from '@mui/x-charts/BarChart'
 import { PieChart } from '@mui/x-charts/PieChart'
-
+import './style.css'
 
 const Panel = () => {
+
   const xLabels = [
     'January',
     'February',
@@ -41,17 +42,8 @@ const Panel = () => {
 
 
   return (
-    <div>
-
-      <BarChart
-        width={1000}
-        height={400}
-        series={[
-          { data: pData, label: 'Task amount', id: 'pvId', stack: 'total' },
-        ]}
-        xAxis={[{ data: xLabels, scaleType: 'band' }]}
-      />
-
+    <div className='grid container'>
+      <div className='flex-cc'>
       <PieChart
         series={[
           {
@@ -62,6 +54,32 @@ const Panel = () => {
         ]}
         height={200}
       />
+      </div>
+      <div>
+        
+      </div>
+      <div>
+        
+      </div>
+      <div className='flex-cc'>
+      <BarChart
+        width={1000}
+        height={200}
+        series={[
+          { data: pData, label: 'Task amount', id: 'pvId', stack: 'total' },
+        ]}
+        xAxis={[{ data: xLabels, scaleType: 'band' }]}
+      />
+        
+      
+      </div>
+      <div>
+      
+      
+      </div>
+ 
+
+
     </div>
   );
 };

@@ -2,16 +2,11 @@
     display: flex;
 }
 
-/* Ajusta el ancho de la barra lateral según tus necesidades */
 .side-bar {
     width: 200px;
-    /* Puedes agregar más estilos según tus necesidades */
 }
 
-/* Ajusta el ancho del contenido principal para ocupar el espacio restante */
 .content {
     flex-grow: 1;
     padding: 20px;
-    /* Añade un relleno según tus necesidades */
-    /* Puedes agregar más estilos según tus necesidades */
 }

@@ -1,0 +1,17 @@
+.container {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: [uno] 1000px [dos] auto [tres] auto [cuatro];
+    grid-template-rows: [uno] auto [dos] auto [tres];
+    gap: 20px;
+}
+
+.flex-cc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

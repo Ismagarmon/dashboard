@@ -13,7 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
 
-  sessionStorage.setItem('userSession', JSON.stringify({isLogged: false}))
+  sessionStorage.setItem('userSession', JSON.stringify({isLogged: true}))
 
 
   return (
