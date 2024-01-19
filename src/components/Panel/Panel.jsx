@@ -20,30 +20,18 @@ const Panel = () => {
     'December'
   ]
 
-  const getTasks = () => {
-    xLabels.forEach(month => {
-      pData.push(100)
-    })
-  }
-
-
-
-  const pData = []
-  getTasks()
-
+  const pData = [100,200,300,400,500,600,700,800,900,1000,1100,1200]
 
   const data = [
     { id: 0, value: 10, label: 'Started' },
     { id: 1, value: 15, label: 'StandBy' },
     { id: 2, value: 20, label: 'NotStarted' },
-    { id: 3, value: 20, label: 'Finished' }
+    { id: 3, value: 40, label: 'Finished' }
   ]
-
-
 
   return (
     <div className='grid container'>
-      <div className='flex-cc'>
+      <div className='flex-cc border'>
       <PieChart
         series={[
           {
@@ -61,7 +49,7 @@ const Panel = () => {
       <div>
         
       </div>
-      <div className='flex-cc'>
+      <div className='flex-cc border'>
       <BarChart
         width={1000}
         height={200}
@@ -73,8 +61,11 @@ const Panel = () => {
         
       
       </div>
+      <div className='flex-cc border'>
       <div>
-      
+        <h2>Total tasks</h2>
+        <p>50</p>
+      </div>
       
       </div>
  

@@ -15,3 +15,13 @@
     justify-content: center;
     align-items: center;
 }
+
+.border {
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgb(185, 196, 196);
+}
+
+.flex-cc div {
+    text-align: center;
+}

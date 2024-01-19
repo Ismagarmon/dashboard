@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import style from './style.module.scss'
+import './style.css'
 
 const Item = ({text,to,svg,open,index}) => {
 
@@ -9,7 +10,7 @@ const Item = ({text,to,svg,open,index}) => {
             <div>
                 {svg}
             </div>
-            {open ? <p>{text}</p> : null}
+            {open ? <p className='m-reform'>{text}</p> : null}
         </NavLink>
     )
 }

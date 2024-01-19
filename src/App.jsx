@@ -6,8 +6,7 @@ import SignUp from './components/SignUp/SignUp'
 import Home from './components/Home/Home'
 import Panel from './components/Panel/Panel'
 import TaskList from './components/TaskList/TaskList'
-import Profile from './components/Profile/Profile.jsx'
-import Statistics from './components/Statistics/Statistics'
+import Profile from './components/Profile/Profile'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -23,7 +22,6 @@ function App() {
         <Routes>
           <Route path="/dashboard" element={<Panel/>}/>
           <Route path="/list" element={<TaskList/>}/>
-          <Route path="/statistics" element={<Statistics/>}/>
           <Route path="/profile" element={<Profile/>}/>
           <Route path="/signin" element={<SignIn/>}/>
           <Route path="/signup" element={<SignUp/>}/>
