@@ -3,39 +3,44 @@ import Table from 'react-bootstrap/Table'
 
 
 const TaskList = () => {
-    return (
-      <div className='ctn'>
-        <Table striped bordered hover>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Username</th>
+
+  const tl = [
+    { ID_TASK: 1, DT: "Una tarea cualquiera", CDT: "2024", ST: "Finished", Month: "January" },
+    { ID_TASK: 2, DT: "A peculiar assignment", CDT: "2024-01-19", ST: "Finished", Month: "January" },
+    { ID_TASK: 3, DT: "Task with a twist", CDT: "2024-01-19", ST: "Finished", Month: "January" },
+    { ID_TASK: 4, DT: "The enigmatic job", CDT: "2024-01-19", ST: "Finished", Month: "January" },
+    { ID_TASK: 5, DT: "Mission Unusual", CDT: "2024-01-19", ST: "Finished", Month: "January" },
+    { ID_TASK: 6, DT: "Eccentric Challenge", CDT: "2024-01-19", ST: "Finished", Month: "January" },
+    { ID_TASK: 7, DT: "Quirky Duty", CDT: "2024-01-19", ST: "Finished", Month: "January" },
+    { ID_TASK: 8, DT: "Offbeat Task", CDT: "2024-01-19", ST: "Finished", Month: "January" },
+    { ID_TASK: 9, DT: "Unusual Endeavor", CDT: "2024-01-19", ST: "Finished", Month: "January" },
+    { ID_TASK: 10, DT: "Astronomical Assignment", CDT: "2024-01-19", ST: "Finished", Month: "January" },
+    { ID_TASK: 11, DT: "Mysterious Mission", CDT: "2024-01-19", ST: "Finished", Month: "January" },
+    { ID_TASK: 12, DT: "Cryptic Challenge", CDT: "2024-01-19", ST: "Finished", Month: "January" }
+  ]
+
+  return (
+    <div className='ctn'>
+      <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>ID_TASK</th>
+            <th>DescriptionTaks</th>
+            <th>CreatedDateTask</th>
+            <th>StatusTask</th>
+            <th>Month</th>
+          </tr>
+        </thead>
+        <tbody>
+          {tl.map(task => {
+            <tr key={task.ID_TASK}>
+              ASD
             </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </Table>
-      </div>
-    );
-  };
-  
+          })}
+        </tbody>
+      </Table>
+    </div>
+  );
+};
+
 export default TaskList
