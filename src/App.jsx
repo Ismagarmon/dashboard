@@ -3,7 +3,6 @@ import SideBar from './components/SideBar/SideBar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import SignIn from './components/SignIn/SignIn'
 import SignUp from './components/SignUp/SignUp'
-import Home from './components/Home/Home'
 import Panel from './components/Panel/Panel'
 import TaskList from './components/TaskList/TaskList'
 import Profile from './components/Profile/Profile'
@@ -25,10 +24,9 @@ function App() {
           <Route path="/profile" element={<Profile/>}/>
           <Route path="/signin" element={<SignIn/>}/>
           <Route path="/signup" element={<SignUp/>}/>
-          <Route path="/home" element={<Home/>}/>
           <Route
             path="/"
-            element={<Home/>}
+            element={<SignIn/>}
           />
         </Routes>
       </div>
