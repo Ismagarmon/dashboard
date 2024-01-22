@@ -43,8 +43,12 @@ const Panel = () => {
         height={200}
       />
       </div>
-      <div>
-        
+      <div className='flex-cc'>
+      <div className='border pt'>
+        <h2>Total tasks Finished</h2>
+        <p>50</p>
+      </div>
+      
       </div>
       <div>
         
@@ -61,8 +65,8 @@ const Panel = () => {
         
       
       </div>
-      <div className='flex-cc border'>
-      <div>
+      <div className='flex-cc'>
+      <div className='border pt'>
         <h2>Total tasks</h2>
         <p>50</p>
       </div>

@@ -25,3 +25,7 @@
 .flex-cc div {
     text-align: center;
 }
+
+.pt {
+    padding: 1rem;
+}
